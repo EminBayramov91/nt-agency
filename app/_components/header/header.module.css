@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 100;
+    width: 100%;
+    max-width: 1840px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: var(--header-radius);
+    padding: 30px 40px;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

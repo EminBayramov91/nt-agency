@@ -1,0 +1,23 @@
+.social {
+    display: flex;
+    align-items: center;
+
+    li {
+        margin-right: 24px;
+
+        a {
+            font-size: var(--font-size-social);
+            color: var(--title-text-color);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+}

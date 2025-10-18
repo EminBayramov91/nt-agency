@@ -1,0 +1,30 @@
+:root {
+    --main-bg: #000000;
+    --title-text-color: #ffffff;
+    --subtitle-color: #676767;
+    --accent-color: #0066FF;
+
+    --border: 2px solid #ffffff;
+    --radius: 20px;
+    --header-radius: 40px;
+
+    --title-shadow: 7px 4px 0 rgba(0, 0, 255, 1);
+
+    --font-onder: Onder, sans-serif;
+    --font-lora: Lora, sans-serif;
+    --font-loraItalic: Lora Italic, sans-serif;
+    --font-nunito: Nunito, sans-serif;
+    --font-nunitoSans: Nunito Sans, sans-serif;
+
+    --font-size-button: 10px;
+    --font-size-h1: 115px;
+    --font-size-social: 8px;
+    --font-size-copy: 12px;
+
+    --font-weight-small: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semiBold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extraBold: 800;
+}

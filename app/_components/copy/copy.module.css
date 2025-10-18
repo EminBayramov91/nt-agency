@@ -1,0 +1,9 @@
+.copy {
+    font-family: var(--font-nunitoSans);
+    font-weight: var(--font-weight-small);
+    font-size: var(--font-size-copy);
+    text-align: end;
+    span {
+        display: block;
+    }
+}

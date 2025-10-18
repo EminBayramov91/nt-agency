@@ -1,0 +1,19 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+    font-family: var(--font-onder);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius);
+    padding: 0 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--title-text-color);
+    color: var(--accent-color);
+}
