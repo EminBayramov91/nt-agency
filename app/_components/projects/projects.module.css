@@ -1,0 +1,10 @@
+.projects {
+    padding: 100px 0;
+}
+
+.inner {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

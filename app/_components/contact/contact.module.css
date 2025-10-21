@@ -1,0 +1,5 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}

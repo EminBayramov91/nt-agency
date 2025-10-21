@@ -1,0 +1,21 @@
+.text {
+    position: relative;
+    z-index: 99;
+    font-family: var(--font-loraItalic);
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-regular);
+    color: var(--accent-color);
+    white-space: nowrap;
+    margin-left: 11px;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

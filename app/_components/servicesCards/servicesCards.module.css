@@ -1,0 +1,27 @@
+.cards {
+    margin-top: 80px;
+    ul {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(2, minmax(200px, 860px));
+        li {
+            display: flex;
+            align-items: center;
+            border: var(--border);
+            border-radius: var(--radius);
+            padding: 56.5px 19px 56.5px 30px;
+            span {
+                display: block;
+                font-size: var(--font-size-subtitle);
+                color: var(--accent-color);
+                margin-right: 20px;
+            }
+            p {
+                font-family: var(--font-loraItalic);
+                font-weight: var(--font-weight-medium);
+                font-size: var(--font-size-subtitle);
+                text-transform: uppercase;
+            }
+        }
+    }
+}

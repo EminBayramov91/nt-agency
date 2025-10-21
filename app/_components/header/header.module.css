@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     top: 20px;
-    left: 40px;
+    right: 50%;
     z-index: 100;
     width: 100%;
     max-width: 1840px;
@@ -11,6 +11,7 @@
     align-items: center;
     background-color: transparent;
     border-radius: var(--header-radius);
+    transform: translate(50%, 0px);
     padding: 30px 40px;
 }
 

@@ -1,6 +1,8 @@
 import "./_styles/globals.css";
 import Header from "@/app/_components/header/Header";
 import Footer from "@/app/_components/footer/Footer";
+import {AppProvider} from "@/app/_context/AppContext";
+import Popup from "@/app/_components/popup/Popup";
 
 export const metadata = {
     title: "N&T Agency",
@@ -9,11 +11,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <AppProvider>
+          <Header />
+          <Popup />
+          <main>{children}</main>
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );

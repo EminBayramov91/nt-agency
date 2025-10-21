@@ -1,0 +1,15 @@
+.info {
+    h3 {
+        font-size: var(--font-size-h3);
+        line-height: var(--line-height-h3);
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-family: var(--font-loraItalic);
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-subtitle);
+        text-transform: uppercase;
+        color: var(--subtitle-color);
+    }
+}

@@ -24,6 +24,7 @@ button {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: var(--title-text-color);
 }
@@ -34,4 +35,71 @@ img {
 
 li {
     list-style: none;
+}
+
+input {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.react-tel-input {
+    margin-bottom: 24px;
+}
+
+.react-tel-input .selected-flag {
+    background-color: transparent!important;
+}
+
+.react-tel-input .selected-flag:hover {
+    background-color: transparent!important;
+}
+
+.react-tel-input .selected-flag .flag {
+    top: 39% !important;
+}
+
+.react-tel-input .country-list {
+    width: 96px!important;
+    max-height: 74px!important;
+    border-radius: 16px!important;
+    border: 1px solid var(--accent-color)!important;
+    background-color: #000!important;
+    margin: 0!important;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+
+}
+
+.react-tel-input .country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9.5px 10px!important;
+}
+
+.react-tel-input .country:hover {
+    background-color: #000!important;
+}
+
+.react-tel-input .highlight {
+    background-color: #000000!important;
+}
+
+.react-tel-input .country-name {
+    display: none;
+}
+
+.react-tel-input .flag {
+    margin-right: 4px!important;
+    margin-top: 0!important;
 }

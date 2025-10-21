@@ -3,10 +3,17 @@
     --title-text-color: #ffffff;
     --subtitle-color: #676767;
     --accent-color: #0066FF;
+    --popup-bg: rgba(0, 0, 0, 0.4);
+    --popup-blur: blur(20px);
 
     --border: 2px solid #ffffff;
+    --popup-border: 1px solid #ffffff;
+    --checkbox-border: 1px solid #ffffff;
+
     --radius: 20px;
+    --popup-radius: 30px;
     --header-radius: 40px;
+    --checkbox-radius: 4px;
 
     --title-shadow: 7px 4px 0 rgba(0, 0, 255, 1);
 
@@ -16,10 +23,16 @@
     --font-nunito: Nunito, sans-serif;
     --font-nunitoSans: Nunito Sans, sans-serif;
 
-    --font-size-button: 10px;
     --font-size-h1: 115px;
+    --font-size-h3: 32px;
+    --font-size-button: 10px;
     --font-size-social: 8px;
     --font-size-copy: 12px;
+    --font-size-subtitle: 32px;
+    --font-size-label: 18px;
+    --font-size-input: 16px;
+    --font-size-accordion: 20px;
+    --font-size-card: 24px;
 
     --font-weight-small: 300;
     --font-weight-regular: 400;
@@ -27,4 +40,7 @@
     --font-weight-semiBold: 600;
     --font-weight-bold: 700;
     --font-weight-extraBold: 800;
+
+    --line-height-h3: 48px;
+    --letter-spacing: 0.6px;
 }
