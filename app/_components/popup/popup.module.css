@@ -39,3 +39,34 @@
     font-size: var(--font-size-input);
     margin: 32px 0 10px;
 }
+
+@media (max-width: 1800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 450px;
+    }
+    .bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 30px 10px;
+        max-width: 450px;
+    }
+}

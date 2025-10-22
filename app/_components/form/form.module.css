@@ -109,6 +109,7 @@
         input {
             font-size: 14px;
             margin-bottom: 22px;
+            height: 50px;
         }
         textarea {
             min-height: 136px;
@@ -187,13 +188,11 @@
         input {
             font-size: 12px;
             margin-bottom: 16px;
-            border-radius: 10px;
         }
         textarea {
             font-size: 13px;
             margin-bottom: 18px;
             min-height: 110px;
-            border-radius: 10px;
         }
         .checkbox {
             font-size: 12px;

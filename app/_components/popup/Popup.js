@@ -31,8 +31,10 @@ export default function Popup() {
                     onClick={() => dispatch({type: "CLOSE_POPUP"})}
                 />
                 <Form/>
-                <span className={styles.popupSpan}>Или напишите нам:</span>
-                <Social centered="center"/>
+                <div className={styles.bottom}>
+                    <span className={styles.popupSpan}>Или напишите нам:</span>
+                    <Social centered="center"/>
+                </div>
             </div>
         </div>
     );
