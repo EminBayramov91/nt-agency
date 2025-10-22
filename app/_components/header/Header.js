@@ -1,15 +1,24 @@
 "use client";
 import styles from "./header.module.css";
-import Container from "@/app/_components/container/Container";
 import Logo from "@/app/_components/logo/Logo";
-import {useContext} from "react";
+import {useContext, useEffect, useState} from "react";
 import {AppContext} from "@/app/_context/AppContext";
 
 export default function Header() {
     const [state, dispatch] = useContext(AppContext);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handlerScroll = () => {
+            setScrolled(window.scrollY > 0);
+        }
+        window.addEventListener("scroll", handlerScroll);
+        handlerScroll();
+        return () => window.removeEventListener("scroll", handlerScroll);
+    }, [])
 
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}>
             <Logo/>
             <button
                 type="button"

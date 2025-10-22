@@ -60,6 +60,7 @@
         max-width: 375px;
         li {
             margin-right: 24px;
+            margin-top: 24px;
             a {
                 font-size: 11px;
             }

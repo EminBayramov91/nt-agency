@@ -12,6 +12,7 @@
     border-radius: var(--header-radius);
     transform: translate(50%, 0px);
     padding: 30px 40px;
+    transition: background-color 0.2s ease;
 
     button {
         width: 269px;
@@ -35,7 +36,9 @@
         color: var(--accent-color);
     }
 }
-
+.headerScrolled {
+    background-color: var(--main-bg);
+}
 
 @media (max-width: 1800px) {
     .header {
