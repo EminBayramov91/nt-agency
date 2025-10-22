@@ -15,6 +15,7 @@ export default function ProjectCard({ array }) {
                                 src={item.src}
                                 alt="card image"
                                 fill
+                                sizes="max-width: 571px"
                             />
                             <h4>{item.title}</h4>
                             <div className={styles.textInner}>

@@ -18,7 +18,7 @@ export default function Hero() {
             <Video />
             <Container>
                 <h1 className={styles.title}>
-                    <span>Здесь собирают продукты</span>
+                    Здесь собирают продукты
                 </h1>
                 <AnimatedText texts={phrases} typingSpeed={100} pause={2000}/>
             </Container>

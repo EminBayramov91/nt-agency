@@ -35,10 +35,9 @@ export default function Promo() {
             <SectionIntro
                 title="Берем на себя все для запуска"
                 text="Каждый этап — с вниманием, а не для отчётности"
-                width="799px"
-                textWidth="545px"
+                type="promo"
             />
-            <Accordion array={accordionItems} width="881px"/>
+            <Accordion array={accordionItems} type="promo"/>
         </section>
     )
 }

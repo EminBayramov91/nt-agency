@@ -1,3 +1,39 @@
 .services {
     padding: 100px 0;
 }
+
+@media (max-width: 1800px) {
+    .services {
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .services {
+        padding: 79px 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .services {
+        padding: 75px 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .services {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .services {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 40px 0;
+    }
+}

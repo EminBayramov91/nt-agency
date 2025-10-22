@@ -3,3 +3,42 @@
     justify-content: space-between;
     padding: 100px 0;
 }
+
+@media (max-width: 1800px) {
+    .promo {
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .promo {
+        padding: 79px 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .promo {
+        padding: 75px 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .promo {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding: 40px 0;
+    }
+}

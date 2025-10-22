@@ -21,7 +21,7 @@
 .hidedItem {
     position: relative;
     width: 571px;
-    min-height: 335px;
+    height: 335px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +30,6 @@
     opacity: 0;
     transition: transform 0.2s ease, opacity 0.5s ease;
     img {
-        object-fit: cover;
         border-radius: var(--radius);
     }
     .textInner {
@@ -44,6 +43,7 @@
         z-index: 10;
     }
     span {
+        display: block;
         font-family: var(--font-nunitoSans);
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-input);
@@ -62,4 +62,90 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 1800px) {
+    .card,
+    .hidedItem {
+        width: 514px;
+        height: 302px;
+        padding: 27px 14px;
+    }
+
+    .card {
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        p,
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1600px) {
+    .card,
+    .hidedItem {
+        width: 450px;
+        height: 264px;
+        padding: 24px 13px;
+    }
+
+    .card {
+        h4 {
+            font-size: 18.9px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        p,
+        span {
+            font-size: 14.7px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .card,
+    .hidedItem {
+        width: 429px;
+        height: 251px;
+        padding: 23px 12px;
+    }
+
+    .card {
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        p,
+        span {
+            font-size: 13.5px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .card,
+    .hidedItem {
+        width: 343px;
+        height: 200px;
+    }
+
+    .card {
+        p,
+        span {
+            font-size: 16px;
+        }
+    }
+    .card:hover .hidedItem{
+        transform: translate(-16px, -86%);
+    }
 }

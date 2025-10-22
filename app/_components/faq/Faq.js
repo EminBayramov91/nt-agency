@@ -50,12 +50,11 @@ export default function Faq() {
             <SectionIntro
                 title="Вопросы, которые нам задают"
                 text="А мы отвечаем, чтобы сразу прояснить."
-                width="880px"
-                textWidth="447px"
+                type="faq"
             />
             <div className={style.inner}>
-                <Accordion array={firstArray} width="858px" size="18px"/>
-                <Accordion array={secondArray} width="858px" size="18px"/>
+                <Accordion array={firstArray} type="faq"/>
+                <Accordion array={secondArray} type="faq"/>
             </div>
         </section>
     )

@@ -7,3 +7,37 @@
         display: block;
     }
 }
+
+@media (max-width: 1800px) {
+    .copy {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .copy {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .copy {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .copy {
+        width: 375px;
+        font-size: 8px;
+        text-align: start;
+    }
+}
+
+@media (max-width: 450px) {
+    .copy {
+        width: 350px;
+        font-size: 8px;
+        text-align: start;
+    }
+}

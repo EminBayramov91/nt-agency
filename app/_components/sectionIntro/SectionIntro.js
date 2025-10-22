@@ -1,12 +1,9 @@
 import styles from "./sectionIntro.module.css";
-export default function SectionIntro({ title, text, width, textWidth }) {
+export default function SectionIntro({ title, text, type }) {
     return (
-        <div style={{width: width}} className={styles.info}>
+        <div className={`${styles.info} ${styles[type]}`}>
             <h3 className="title">{title}</h3>
-            {textWidth
-                ? <p style={{width: textWidth}} className="subtitle">{text}</p>
-                : <p className="subtitle">{text}</p>
-            }
+            <p className="subtitle">{text}</p>
         </div>
     )
 }

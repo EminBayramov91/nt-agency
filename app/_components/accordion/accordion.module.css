@@ -1,6 +1,16 @@
 .accordion {
 
 }
+.promo {
+    width: 881px;
+}
+
+.faq {
+    width: 858px;
+    h4 {
+        font-size: 18px;
+    }
+}
 
 .inner {
     min-height: 180px;
@@ -50,5 +60,131 @@
 .itemActive {
     img {
         transform: rotate(-180deg);
+    }
+}
+
+@media (max-width: 1800px) {
+    .promo {
+        width: 793px;
+    }
+    .faq {
+        width: 772px;
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .inner {
+        min-height: 162px;
+        padding: 27px;
+        margin-top: -40px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .innerActive {
+        min-height: 230px;
+    }
+    .item {
+        h4 {
+            font-size: 18px;
+        }
+        img {
+            width: 28.8px;
+            height: 28.8px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .promo {
+        width: 694px;
+    }
+    .faq {
+        width: 676px;
+        h4 {
+            font-size: 14px;
+        }
+    }
+    .inner {
+        min-height: 141.75px;
+        padding: 24px;
+        margin-top: -35px;
+        p {
+            font-size: 16px;
+        }
+    }
+    .innerActive {
+        min-height: 200px;
+    }
+    .item {
+        h4 {
+            font-size: 16px;
+        }
+        img {
+            width: 25.2px;
+            height: 25.2px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .promo {
+        width: 661px;
+    }
+    .faq {
+        width: 644px;
+        h4 {
+            font-size: 13px;
+        }
+    }
+    .inner {
+        min-height: 135px;
+        padding: 23px;
+        margin-top: -33px;
+    }
+    .innerActive {
+        min-height: 180px;
+    }
+    .item {
+        h4 {
+            font-size: 15px;
+        }
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo {
+        width: 343px;
+    }
+    .faq {
+        width: 343px;
+        h4 {
+            font-size: 11px;
+        }
+    }
+    .inner {
+        min-height: 140px;
+        padding: 16px;
+        margin-top: -44px;
+        p {
+            font-size: 11px;
+        }
+    }
+    .innerActive {
+        min-height: 200px;
+    }
+    .item {
+        h4 {
+            font-size: 11px;
+            max-width: 291px;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
 }

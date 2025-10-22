@@ -13,3 +13,174 @@
         color: var(--subtitle-color);
     }
 }
+
+.promo {
+    width: 100%;
+    max-width: 799px;
+    p {
+        max-width: 545px;
+    }
+}
+
+.services {
+    width: 100%;
+    max-width: 1020px;
+}
+
+.projects {
+    width: 100%;
+    max-width: 1060px;
+}
+
+.faq {
+    width: 100%;
+    max-width: 880px;
+    p {
+        max-width: 447px;
+    }
+}
+.contact {
+    max-width: 819px;
+}
+
+@media (max-width: 1800px) {
+    .info {
+        h3 {
+            font-size: 29px;
+            line-height: 43px;
+            margin-bottom: 22px;
+        }
+
+        p {
+            font-size: 29px;
+        }
+    }
+    .promo {
+        max-width: 724px;
+        p {
+            max-width: 494px;
+        }
+    }
+    .services {
+        max-width: 924px;
+    }
+    .projects {
+        max-width: 961px;
+    }
+    .faq {
+        max-width: 798px;
+        p {
+            max-width: 406px;
+        }
+    }
+    .contact {
+        max-width: 699px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .info {
+        h3 {
+            font-size: 25px;
+            line-height: 38px;
+            margin-bottom: 19px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
+    .promo {
+        max-width: 624px;
+        p {
+            max-width: 426px;
+        }
+    }
+    .services {
+        max-width: 797px;
+    }
+    .projects {
+        max-width: 828px;
+    }
+    .faq {
+        max-width: 688px;
+        p {
+            max-width: 350px;
+        }
+    }
+    .contact {
+        max-width: 602px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .info {
+        margin: 0 auto;
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+    .promo {
+        max-width: 599px;
+        p {
+            max-width: 409px;
+        }
+    }
+    .services {
+        max-width: 765px;
+    }
+    .projects {
+        max-width: 795px;
+    }
+    .faq {
+        max-width: 660px;
+        p {
+            max-width: 336px;
+        }
+    }
+    .contact {
+        max-width: 578px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .info {
+        h3 {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+    .promo {
+        max-width: 310px;
+        p {
+            max-width: 310px;
+        }
+    }
+    .services {
+        max-width: 343px;
+    }
+    .projects {
+        max-width: 351px;
+    }
+    .faq {
+        max-width: 343px;
+        p {
+            max-width: 255px;
+        }
+    }
+    .contact {
+        max-width: 343px;
+    }
+}

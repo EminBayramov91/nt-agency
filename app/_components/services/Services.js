@@ -8,7 +8,7 @@ export default function Services() {
             <SectionIntro
                 title="Простая и прозрачная работа"
                 text="Всё просто"
-                width="1020px"
+                type="services"
             />
             <ServicesCards />
         </section>

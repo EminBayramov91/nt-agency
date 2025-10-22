@@ -8,15 +8,18 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Container>
-                <Image
-                    src="n-t-agency.svg"
-                    alt="footer logo"
-                    width="1746"
-                    height="175"
-                />
+                <picture>
+                    <source srcSet="n-t-agency-m.svg" media="(max-width: 800px)"/>
+                    <Image
+                        src="n-t-agency.svg"
+                        alt="footer logo"
+                        width="1746"
+                        height="175"
+                    />
+                </picture>
                 <div className={styles.bottom}>
-                    <Social />
-                    <Copy />
+                    <Social/>
+                    <Copy/>
                 </div>
             </Container>
         </footer>

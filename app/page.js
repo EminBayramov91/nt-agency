@@ -9,7 +9,6 @@ import {AppContext} from "@/app/_context/AppContext";
 import Services from "@/app/_components/services/Services";
 import Faq from "@/app/_components/faq/Faq";
 import Projects from "@/app/_components/projects/Projects";
-import AnimatedText from "@/app/_components/animatedText/AnimatedText";
 
 export default function Page() {
     const [state, dispatch] = useContext(AppContext);

@@ -5,18 +5,113 @@
     z-index: 100;
     width: 100%;
     max-width: 1840px;
-    height: 108px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
     border-radius: var(--header-radius);
     transform: translate(50%, 0px);
     padding: 30px 40px;
+
+    button {
+        width: 269px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--accent-color);
+        color: var(--title-text-color);
+        font-family: var(--font-onder);
+        font-size: var(--font-size-button);
+        font-weight: var(--font-weight-medium);
+        border-radius: var(--radius);
+        padding: 0 16px;
+        cursor: pointer;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: var(--title-text-color);
+        color: var(--accent-color);
+    }
 }
 
-.inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@media (max-width: 1800px) {
+    .header {
+        border-radius: 32px;
+        max-width: 1643px;
+        padding: 24px 30px;
+    }
+    .header {
+        img {
+            width: 62px;
+            height: 36px;
+        }
+        button {
+            width: 241px;
+            height: 43px;
+            font-size: 9px;
+            padding: 0 14px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .header {
+        border-radius: 24px;
+        max-width: 1434px;
+        padding: 18px 24px;
+    }
+    .header {
+        img {
+            width: 53px;
+            height: 31px;
+        }
+        button {
+            width: 213px;
+            height: 38px;
+            font-size: 7.87px;
+            padding: 0 13px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .header {
+        border-radius: 24px;
+        max-width: 1366px;
+    }
+    .header {
+        img {
+            width: 51px;
+            height: 30px;
+        }
+        button {
+            width: 202px;
+            height: 36px;
+            font-size: 7.5px;
+            padding: 0 12px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        border-radius: 20px;
+        max-width: 1366px;
+        padding: 16px;
+    }
+    .header {
+        img {
+            width: 50px;
+            height: 29px;
+        }
+        button {
+            width: 180px;
+            height: 40px;
+            font-size: 6px;
+            padding: 0 19px;
+        }
+    }
 }

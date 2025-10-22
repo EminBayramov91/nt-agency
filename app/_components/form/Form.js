@@ -16,7 +16,7 @@ export default function Form() {
                 <input id="check" type="checkbox"/>
                 Даю согласие на обработку персональных данных
             </label>
-            <Button type="submit" width="600px" height="40px">Обсудить идею</Button>
+            <Button type="submit">Обсудить идею</Button>
         </form>
     );
 }

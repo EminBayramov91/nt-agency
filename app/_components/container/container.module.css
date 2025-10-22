@@ -4,3 +4,46 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+@media (max-width: 1800px) {
+    .container {
+        max-width: 1624px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1426px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1360px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 740px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 355px;
+    }
+}

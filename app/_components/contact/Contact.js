@@ -8,7 +8,7 @@ export default function Contact() {
             <SectionIntro
                 title="всё начинается с одной строки"
                 text="Просто расскажите суть, а мы подскажем, с чего начать."
-                width="819px"
+                type="contact"
             />
             <Form />
         </section>

@@ -3,7 +3,7 @@ import styles from "./accordion.module.css";
 import Image from "next/image";
 import {useState} from "react";
 
-export default function Accordion({ array, width, size }) {
+export default function Accordion({ array, type }) {
     const [activeId, setActiveId] = useState()
 
     const toggleAccordion = (id) => {
@@ -18,14 +18,13 @@ export default function Accordion({ array, width, size }) {
                 return (
                     <div
                         key={item.id}
-                        className={`${styles.inner} ${isActive ? styles.innerActive : ""}`}
+                        className={`${styles.inner} ${styles[type]} ${isActive ? styles.innerActive : ""}`}
                         onClick={() => toggleAccordion(item.id)}
-                        style={{ width: width }}
                     >
                         <div
                             className={`${styles.item} ${isActive ? styles.itemActive : ""}`}
                         >
-                            <h4 style={{ fontSize: size }}>{item.title}</h4>
+                            <h4>{item.title}</h4>
                             <Image
                                 src={item.src}
                                 alt="Accordion Arrow"

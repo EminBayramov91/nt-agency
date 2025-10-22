@@ -36,7 +36,7 @@ export default function Projects() {
             <SectionIntro
                 title="Реальные проекты —под реальные задачи"
                 text="Делаем продукты, которые решают"
-                width="1060px"
+                type="projects"
             />
             <div className={styles.inner}>
                 <ProjectCard array={cards}/>
