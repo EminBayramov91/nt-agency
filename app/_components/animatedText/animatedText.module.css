@@ -1,9 +1,10 @@
 .text {
     position: relative;
     z-index: 99;
-    font-family: var(--font-loraItalic);
+    font-family: Lora, sans-serif;
     font-size: var(--font-size-subtitle);
     font-weight: var(--font-weight-regular);
+    font-style: italic;
     color: var(--accent-color);
     white-space: nowrap;
     margin-left: 11px;

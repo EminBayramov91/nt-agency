@@ -34,7 +34,7 @@
 .popupSpan {
     display: block;
     text-align: center;
-    font-family: var(--font-nunitoSans);
+    font-family: NunitoSans, sans-serif;
     font-weight: var(--font-weight-small);
     font-size: var(--font-size-input);
     margin: 32px 0 10px;

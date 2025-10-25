@@ -6,7 +6,8 @@
     }
 
     p {
-        font-family: var(--font-loraItalic);
+        font-family: Lora, sans-serif;
+        font-style: italic;
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-subtitle);
         text-transform: uppercase;
@@ -100,7 +101,7 @@
         max-width: 797px;
     }
     .projects {
-        max-width: 828px;
+        max-width: 829px;
     }
     .faq {
         max-width: 688px;
@@ -115,7 +116,6 @@
 
 @media (max-width: 1440px) {
     .info {
-        margin: 0 auto;
         h3 {
             font-size: 24px;
             line-height: 36px;
@@ -146,6 +146,13 @@
     }
     .contact {
         max-width: 578px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .info {
+        margin: 0 auto;
+
     }
 }
 

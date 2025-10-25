@@ -6,15 +6,15 @@ export default function HeroArrow() {
     const [state, dispatch] = useContext(AppContext);
 
     return (
-        <button type="button" className={styles.arrow}>
+        <button onClick={() => dispatch({ type: "SCROLL_TO", payload: "promo"})} type="button" className={styles.arrow}>
             <Image
                 src="hero-arrow.svg"
                 alt="hero arrow"
                 width="105"
                 height="105"
-                onClick={() => dispatch({ type: "SCROLL_TO", payload: "promo"})}
+
             />
-            {/*<span className={styles.loader}></span>*/}
+            <span className={styles.loader}></span>
         </button>
     )
 }

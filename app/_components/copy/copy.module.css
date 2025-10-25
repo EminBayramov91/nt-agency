@@ -1,5 +1,5 @@
 .copy {
-    font-family: var(--font-nunitoSans);
+    font-family: NunitoSans, sans-serif;
     font-weight: var(--font-weight-small);
     font-size: var(--font-size-copy);
     text-align: end;

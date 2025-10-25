@@ -11,7 +11,7 @@
         font-size: var(--font-size-card);
     }
     p {
-        font-family: var(--font-nunitoSans);
+        font-family: NunitoSans, sans-serif;
         font-weight: var(--font-weight-extraBold);
         font-size: var(--font-size-label);
         color: var(--title-text-color);
@@ -44,7 +44,7 @@
     }
     span {
         display: block;
-        font-family: var(--font-nunitoSans);
+        font-family: NunitoSans, sans-serif;
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-input);
         color: var(--title-text-color);

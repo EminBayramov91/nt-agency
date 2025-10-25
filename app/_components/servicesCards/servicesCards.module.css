@@ -17,9 +17,10 @@
                 margin-right: 20px;
             }
             p {
-                font-family: var(--font-loraItalic);
+                font-family: Lora, sans-serif;
                 font-weight: var(--font-weight-medium);
                 font-size: var(--font-size-subtitle);
+                font-style: italic;
                 text-transform: uppercase;
             }
         }
@@ -33,7 +34,7 @@
             grid-template-columns: repeat(2, minmax(200px, 774px));
             grid-gap: 36px;
             li {
-                padding: 47.5px 19px 47.5px 30px;
+                padding: 47.5px 10px 47.5px 27px;
                 span {
                     font-size: 29px;
                     margin-right: 18px;

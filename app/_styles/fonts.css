@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "Lora Italic";
+    font-family: "Lora";
     src: url("/fonts/Lora-Italic.woff2") format("woff2");
     font-weight: 100 900;
     font-style: italic;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: "Nunito Sans";
+    font-family: "NunitoSans";
     src: url("/fonts/NunitoSans.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;

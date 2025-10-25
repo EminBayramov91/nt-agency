@@ -23,7 +23,7 @@
     transition: min-height 0.3s ease, background-color 0.3s ease;
 
     p {
-        font-family: var(--font-nunitoSans);
+        font-family: NunitoSans, sans-serif;
         font-weight: var(--font-weight-small);
         font-size: var(--font-size-accordion);
         color: var(--title-text-color);
@@ -64,15 +64,6 @@
 }
 
 @media (max-width: 1800px) {
-    .promo {
-        width: 793px;
-    }
-    .faq {
-        width: 772px;
-        h4 {
-            font-size: 16px;
-        }
-    }
     .inner {
         min-height: 162px;
         padding: 27px;
@@ -93,18 +84,19 @@
             height: 28.8px;
         }
     }
+    .promo {
+        width: 793px;
+    }
+    .faq {
+        width: 772px;
+        h4 {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 1600px) {
-    .promo {
-        width: 694px;
-    }
-    .faq {
-        width: 676px;
-        h4 {
-            font-size: 14px;
-        }
-    }
+
     .inner {
         min-height: 141.75px;
         padding: 24px;
@@ -125,18 +117,19 @@
             height: 25.2px;
         }
     }
+    .promo {
+        width: 694px;
+    }
+    .faq {
+        width: 676px;
+        h4 {
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 1440px) {
-    .promo {
-        width: 661px;
-    }
-    .faq {
-        width: 644px;
-        h4 {
-            font-size: 13px;
-        }
-    }
+
     .inner {
         min-height: 135px;
         padding: 23px;
@@ -154,18 +147,19 @@
             height: 24px;
         }
     }
+    .promo {
+        width: 661px;
+    }
+    .faq {
+        width: 644px;
+        h4 {
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
-    .promo {
-        width: 343px;
-    }
-    .faq {
-        width: 343px;
-        h4 {
-            font-size: 11px;
-        }
-    }
+
     .inner {
         min-height: 140px;
         padding: 16px;
@@ -185,6 +179,15 @@
         img {
             width: 20px;
             height: 20px;
+        }
+    }
+    .promo {
+        width: 343px;
+    }
+    .faq {
+        width: 343px;
+        h4 {
+            font-size: 11px;
         }
     }
 }

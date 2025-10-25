@@ -17,12 +17,6 @@
 
     --title-shadow: 7px 4px 0 rgba(0, 0, 255, 1);
 
-    --font-onder: Onder, sans-serif;
-    --font-lora: Lora, sans-serif;
-    --font-loraItalic: Lora Italic, sans-serif;
-    --font-nunito: Nunito, sans-serif;
-    --font-nunitoSans: Nunito Sans, sans-serif;
-
     --font-size-h1: 115px;
     --font-size-h3: 32px;
     --font-size-button: 10px;
@@ -30,7 +24,9 @@
     --font-size-copy: 12px;
     --font-size-subtitle: 32px;
     --font-size-label: 18px;
+    --font-size-activeLabel: 14px;
     --font-size-input: 16px;
+    --font-size-activeInput: 19px;
     --font-size-accordion: 20px;
     --font-size-card: 24px;
 

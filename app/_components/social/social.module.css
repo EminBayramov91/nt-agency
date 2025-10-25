@@ -57,7 +57,7 @@
 @media (max-width: 800px) {
     .social {
         flex-wrap: wrap;
-        max-width: 375px;
+        width: 375px;
         li {
             margin-right: 24px;
             margin-top: 24px;
@@ -71,7 +71,7 @@
 
 @media (max-width: 450px) {
 .social {
-    max-width: 350px;
+    width: 350px;
     li {
         margin-right: 20px;
         a {
