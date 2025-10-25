@@ -3,15 +3,13 @@
     bottom: 22px;
     right: 50%;
     transform: translate(50%, 0);
-    z-index: 100;
+    z-index: 99;
     cursor: pointer;
     img {
         width: 105px;
         height: 105px;
     }
 }
-
-.arrow:hover {}
 
 @media (max-width: 1800px) {
     .arrow {
@@ -66,11 +64,11 @@
     border-color: #0066FF #0000 #0000 #0000;
     border-radius: 50%;
     animation: rotate 3s ease-in-out infinite;
-    transform: rotate(-200deg);
+    transform: rotate(-180deg);
 }
 @keyframes rotate {
     50% {
-        transform: rotate(90deg);
+        transform: rotate(210deg);
     }
 }
 

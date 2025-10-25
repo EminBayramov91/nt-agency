@@ -18,7 +18,15 @@ export default function Page() {
         if (state.scrollTo) {
             const element = document.getElementById(state.scrollTo);
             if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
+                const offset = -100;
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition + offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                });
+                
                 setTimeout(() => dispatch({ type: "RESET_SCROLL" }), 300)
             }
         }
