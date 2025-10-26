@@ -18,7 +18,7 @@ export default function Footer() {
                     />
                 </picture>
                 <div className={styles.bottom}>
-                    <Social/>
+                    <Social type="footer"/>
                     <Copy/>
                 </div>
             </Container>

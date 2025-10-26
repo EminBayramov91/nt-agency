@@ -21,6 +21,7 @@
     --font-size-h3: 32px;
     --font-size-button: 10px;
     --font-size-social: 8px;
+    --font-size-popupSocial: 10px;
     --font-size-copy: 12px;
     --font-size-subtitle: 32px;
     --font-size-label: 18px;
@@ -28,6 +29,8 @@
     --font-size-input: 16px;
     --font-size-activeInput: 19px;
     --font-size-accordion: 20px;
+    --font-size-accordionFaq: 18px;
+    --font-size-accordionText: 22px;
     --font-size-card: 24px;
 
     --font-weight-small: 300;
@@ -37,6 +40,7 @@
     --font-weight-bold: 700;
     --font-weight-extraBold: 800;
 
-    --line-height-h3: 48px;
+    --line-height-titles: 55px;
+    --line-height-success: 48px;
     --letter-spacing: 0.6px;
 }

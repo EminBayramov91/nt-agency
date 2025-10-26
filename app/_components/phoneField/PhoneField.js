@@ -2,7 +2,7 @@
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css"
 
-export default function PhoneField({ focusedInput, setFocusedInput }) {
+export default function PhoneField({ id, focusedInput, setFocusedInput, value, onChange }) {
     const fontSize = focusedInput === "phone" ? "19px" : "16px";
     const border = focusedInput === "phone" ? "2px solid #0066FF" : "2px solid #ffffff";
 
@@ -10,11 +10,12 @@ export default function PhoneField({ focusedInput, setFocusedInput }) {
         <div style={{width: "100%"}}>
             <PhoneInput
                 country={"by"}
-                // value={phone}
+                value={value}
                 onFocus={() => setFocusedInput("phone")}
                 onBlur={() => setFocusedInput(null)}
+                onChange={(val) => onChange({ target: { id: id, value: val, type: "phone" } })}
                 inputProps={{
-                    id: "phone",
+                    id: id,
                     required: true,
                 }}
                 inputStyle={{

@@ -24,9 +24,9 @@ const links = [
     },
 ]
 
-export default function Social({ centered = "start" }) {
+export default function Social({ type }) {
     return (
-        <ul style={{ justifyContent: centered }} className={styles.social}>
+        <ul className={`${styles.social} ${styles[type]}`}>
             {
                 links.map(link => (
                     <li key={link.id}>

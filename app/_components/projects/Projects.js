@@ -34,8 +34,8 @@ export default function Projects() {
     return (
         <section className={styles.projects}>
             <SectionIntro
-                title="Реальные проекты —под реальные задачи"
-                text="Делаем продукты, которые решают"
+                title={["Реальные проекты <span class='dash'>—</span>", " под реальные задачи"]}
+                text={["Делаем продукты, которые решают"]}
                 type="projects"
             />
             <div className={styles.inner}>

@@ -1,16 +1,7 @@
 .accordion {
 
 }
-.promo {
-    width: 881px;
-}
 
-.faq {
-    width: 858px;
-    h4 {
-        font-size: 18px;
-    }
-}
 
 .inner {
     min-height: 180px;
@@ -25,7 +16,7 @@
     p {
         font-family: NunitoSans, sans-serif;
         font-weight: var(--font-weight-small);
-        font-size: var(--font-size-accordion);
+        font-size: var(--font-size-accordionText);
         color: var(--title-text-color);
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -60,6 +51,17 @@
 .itemActive {
     img {
         transform: rotate(-180deg);
+    }
+}
+
+.promo {
+    width: 881px;
+}
+
+.faq {
+    width: 858px;
+    h4 {
+        font-size: var(--font-size-accordionFaq);
     }
 }
 

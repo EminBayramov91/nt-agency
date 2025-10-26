@@ -41,9 +41,3 @@
         max-width: 400px;
     }
 }
-
-@media (max-width: 425px) {
-    .container {
-        max-width: 355px;
-    }
-}

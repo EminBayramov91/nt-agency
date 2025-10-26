@@ -33,8 +33,8 @@ export default function Promo() {
     return (
         <section id="promo" className={styles.promo}>
             <SectionIntro
-                title="Берем на себя все для запуска"
-                text="Каждый этап — с вниманием, а не для отчётности"
+                title={["Берем на себя", " все для запуска"]}
+                text={["Каждый этап — с вниманием,", " а не для отчётности"]}
                 type="promo"
             />
             <Accordion array={accordionItems} type="promo"/>

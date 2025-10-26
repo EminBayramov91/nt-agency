@@ -1,0 +1,17 @@
+.success {
+    text-align: center;
+    h3 {
+        font-family: Onder, sans-serif;
+        font-size: var(--font-size-accordion);
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-success);
+        color: var(--accent-color);
+        margin-bottom: 24px;
+    }
+    p {
+        font-family: NunitoSans, sans-serif;
+        font-size: var(--font-size-card);
+        font-weight: var(--font-weight-small);
+        color: var(--title-text-color);
+    }
+}

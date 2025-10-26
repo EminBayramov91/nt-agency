@@ -3,6 +3,9 @@
         font-size: var(--font-size-h3);
         line-height: var(--line-height-h3);
         margin-bottom: 24px;
+        span {
+            display: block;
+        }
     }
 
     p {
@@ -12,36 +15,10 @@
         font-size: var(--font-size-subtitle);
         text-transform: uppercase;
         color: var(--subtitle-color);
+        span {
+            display: block;
+        }
     }
-}
-
-.promo {
-    width: 100%;
-    max-width: 799px;
-    p {
-        max-width: 545px;
-    }
-}
-
-.services {
-    width: 100%;
-    max-width: 1020px;
-}
-
-.projects {
-    width: 100%;
-    max-width: 1060px;
-}
-
-.faq {
-    width: 100%;
-    max-width: 880px;
-    p {
-        max-width: 447px;
-    }
-}
-.contact {
-    max-width: 819px;
 }
 
 @media (max-width: 1800px) {
@@ -55,27 +32,6 @@
         p {
             font-size: 29px;
         }
-    }
-    .promo {
-        max-width: 724px;
-        p {
-            max-width: 494px;
-        }
-    }
-    .services {
-        max-width: 924px;
-    }
-    .projects {
-        max-width: 961px;
-    }
-    .faq {
-        max-width: 798px;
-        p {
-            max-width: 406px;
-        }
-    }
-    .contact {
-        max-width: 699px;
     }
 }
 
@@ -91,31 +47,11 @@
             font-size: 25px;
         }
     }
-    .promo {
-        max-width: 624px;
-        p {
-            max-width: 426px;
-        }
-    }
-    .services {
-        max-width: 797px;
-    }
-    .projects {
-        max-width: 829px;
-    }
-    .faq {
-        max-width: 688px;
-        p {
-            max-width: 350px;
-        }
-    }
-    .contact {
-        max-width: 602px;
-    }
 }
 
 @media (max-width: 1440px) {
     .info {
+        width: 100%;
         h3 {
             font-size: 24px;
             line-height: 36px;
@@ -128,9 +64,6 @@
     }
     .promo {
         max-width: 599px;
-        p {
-            max-width: 409px;
-        }
     }
     .services {
         max-width: 765px;
@@ -140,9 +73,6 @@
     }
     .faq {
         max-width: 660px;
-        p {
-            max-width: 336px;
-        }
     }
     .contact {
         max-width: 578px;
@@ -152,7 +82,6 @@
 @media (max-width: 1400px) {
     .info {
         margin: 0 auto;
-
     }
 }
 
@@ -170,10 +99,7 @@
         }
     }
     .promo {
-        max-width: 310px;
-        p {
-            max-width: 310px;
-        }
+        max-width: 343px;
     }
     .services {
         max-width: 343px;

@@ -40,7 +40,7 @@
 
 .loader {
     width: 74px;
-    height: 45px;
+    height: 74px;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -61,15 +61,19 @@
     left: 0;
     top: 0;
     border: 3px solid #0066FF;
-    border-color: #0066FF #0000 #0000 #0000;
     border-radius: 50%;
-    animation: rotate 3s ease-in-out infinite;
-    transform: rotate(-180deg);
+    animation: rotate 3s linear infinite;
+    transform: rotate(-90deg);
 }
 @keyframes rotate {
-    50% {
-        transform: rotate(210deg);
-    }
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    12.5%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    37.5%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    62.5%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    100%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
 }
 
 @keyframes image {

@@ -6,8 +6,8 @@ export default function Contact() {
     return (
         <section className={styles.contact}>
             <SectionIntro
-                title="всё начинается с одной строки"
-                text="Просто расскажите суть, а мы подскажем, с чего начать."
+                title={["всё начинается", " с одной строки"]}
+                text={["Просто расскажите суть,", " а мы подскажем, с чего начать."]}
                 type="contact"
             />
             <Form />

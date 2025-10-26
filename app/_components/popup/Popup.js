@@ -5,19 +5,40 @@ import Form from "@/app/_components/form/Form";
 import Social from "@/app/_components/social/Social";
 import {useContext, useEffect} from "react";
 import {AppContext} from "@/app/_context/AppContext";
+import FormSuccess from "@/app/_components/formSuccess/FormSuccess";
+import FormError from "@/app/_components/formError/FormError";
 
 export default function Popup() {
     const [state, dispatch] = useContext(AppContext);
 
     useEffect(() => {
-        if (state.popupOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+        document.body.style.overflow = state.popupOpen ? "hidden" : "";
     }, [state.popupOpen])
 
     if (!state.popupOpen) return null;
+
+    const renderContent = () => {
+        switch (state.formStatus) {
+            case "success":
+                return <FormSuccess />
+            case "error":
+                return <FormError />
+            case "idle":
+                return (
+                    <>
+                        <Form/>
+                        <Social type="popup"/>
+                    </>
+                )
+            default:
+                return (
+                    <>
+                        <Form/>
+                        <Social type="popup"/>
+                    </>
+                )
+        }
+    }
 
     return (
         <div className={styles.popup} onClick={() => dispatch({ type: "CLOSE_POPUP" })}>
@@ -28,13 +49,15 @@ export default function Popup() {
                     width="34"
                     height="34"
                     className={styles.popupImg}
-                    onClick={() => dispatch({type: "CLOSE_POPUP"})}
+                    onClick={() => {
+                        if (state.formStatus === "error") {
+                            dispatch({ type: "FORM_IDLE" });
+                        } else {
+                            dispatch({ type: "CLOSE_POPUP" });
+                        }
+                    }}
                 />
-                <Form/>
-                <div className={styles.bottom}>
-                    <span className={styles.popupSpan}>Или напишите нам:</span>
-                    <Social centered="center"/>
-                </div>
+                {renderContent()}
             </div>
         </div>
     );

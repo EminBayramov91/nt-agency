@@ -6,8 +6,8 @@ export default function Services() {
     return (
         <section className={styles.services}>
             <SectionIntro
-                title="Простая и прозрачная работа"
-                text="Всё просто"
+                title={["Простая", " и прозрачная работа"]}
+                text={["Всё просто"]}
                 type="services"
             />
             <ServicesCards />

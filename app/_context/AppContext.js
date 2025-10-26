@@ -5,6 +5,7 @@ export const AppContext = createContext();
 const initialState = {
     popupOpen: false,
     scrollTo: null,
+    formStatus: "idle",
 };
 
 function reducer(state, action) {
@@ -17,6 +18,12 @@ function reducer(state, action) {
             return {...state, scrollTo: action.payload}
         case "RESET_SCROLL":
             return {...state, scrollTo: null}
+        case "FORM_SUCCESS":
+            return {...state, formStatus: "success"};
+        case "FORM_ERROR":
+            return { ...state, formStatus: "error" };
+        case "FORM_IDLE":
+            return { ...state, formStatus: "idle" };
         default:
             return state;
     }
