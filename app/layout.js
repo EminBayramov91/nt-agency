@@ -1,4 +1,4 @@
-import "./_styles/globals.css";
+import "@/app/styles/globals.css";
 import Header from "@/app/_components/header/Header";
 import Footer from "@/app/_components/footer/Footer";
 import {AppProvider} from "@/app/_context/AppContext";

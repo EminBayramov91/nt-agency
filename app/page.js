@@ -1,5 +1,5 @@
 "use client";
-import styles from "./_styles/page.module.css";
+import styles from "@/app/styles/page.module.css";
 import Container from "@/app/_components/container/Container";
 import Hero from "@/app/_components/hero/Hero";
 import Contact from "@/app/_components/contact/Contact";
@@ -12,7 +12,6 @@ import Projects from "@/app/_components/projects/Projects";
 
 export default function Page() {
     const [state, dispatch] = useContext(AppContext);
-
 
     useEffect(() => {
         if (state.scrollTo) {

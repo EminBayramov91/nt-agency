@@ -1,11 +1,10 @@
-"use client";
 import "@/app/styles/error.css";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Error({error, reset}) {
+export default function NotFound() {
     return (
         <div className="error">
-
             <Image
                 src="Logo.svg"
                 alt="Header Logo"
@@ -13,9 +12,10 @@ export default function Error({error, reset}) {
                 height="40"
             />
             <div className="errorContainer">
-                <h1>500</h1>
-                <p>Произошла ошибка сервера, мы скоро к вам вернемся</p>
+                <h1>404</h1>
+                <p>Страница не найдена</p>
+                <Link className="errorLink" href="/">вернуться На главную</Link>
             </div>
         </div>
-    );
+    )
 }
