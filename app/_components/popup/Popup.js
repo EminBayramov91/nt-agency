@@ -52,7 +52,11 @@ export default function Popup() {
                     onClick={() => {
                         if (state.formStatus === "error") {
                             dispatch({ type: "FORM_IDLE" });
-                        } else {
+                        } 
+                        if (state.formStatus === "success") {
+                            dispatch({ type: "FORM_IDLE" })
+                            dispatch({ type: "CLOSE_POPUP" })
+                        }else {
                             dispatch({ type: "CLOSE_POPUP" });
                         }
                     }}

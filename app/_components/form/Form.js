@@ -111,7 +111,7 @@ export default function Form() {
                 />
                 Даю согласие на обработку персональных данных
             </label>
-            <Button type="submit">Обсудить идею</Button>
+            <Button onClick={() => dispatch({ type: "OPEN_POPUP" })} type="submit">Обсудить идею</Button>
         </form>
     );
 }
