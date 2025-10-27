@@ -15,3 +15,25 @@
         color: var(--title-text-color);
     }
 }
+
+@media (max-width: 1600px) {
+    .success {
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .success {
+        h3 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

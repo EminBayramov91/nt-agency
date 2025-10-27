@@ -95,6 +95,7 @@ textarea:-webkit-autofill:focus {
     border: 1px solid var(--accent-color)!important;
     background-color: #000!important;
     margin: 0!important;
+    margin-top: 8px!important;
     overflow-x: hidden!important;
     overflow-y: scroll!important;
     display: flex;
@@ -108,17 +109,15 @@ textarea:-webkit-autofill:focus {
     width: 5px;
 }
 
-/* Track */
 .react-tel-input .country-list::-webkit-scrollbar-track {
     background: #101010;
+    margin: 12px 0;
 }
 
-/* Handle */
 .react-tel-input .country-list::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #4f4f4f;
 }
 
-/* Handle on hover */
 .react-tel-input .country-list::-webkit-scrollbar-thumb:hover {
     background: #555;
 }

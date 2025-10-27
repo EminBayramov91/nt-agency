@@ -8,18 +8,19 @@ const initialState = {
     formStatus: "idle",
 };
 
+
 function reducer(state, action) {
     switch (action.type) {
         case "OPEN_POPUP":
-            return {...state, popupOpen: true};
+            return { ...state, popupOpen: true };
         case "CLOSE_POPUP":
-            return {...state, popupOpen: false};
+            return { ...state, popupOpen: false };
         case "SCROLL_TO":
-            return {...state, scrollTo: action.payload}
+            return { ...state, scrollTo: action.payload };
         case "RESET_SCROLL":
-            return {...state, scrollTo: null}
+            return { ...state, scrollTo: null };
         case "FORM_SUCCESS":
-            return {...state, formStatus: "success"};
+            return { ...state, formStatus: "success" };
         case "FORM_ERROR":
             return { ...state, formStatus: "error" };
         case "FORM_IDLE":
@@ -27,7 +28,7 @@ function reducer(state, action) {
         default:
             return state;
     }
-};
+}
 
 export function AppProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState);

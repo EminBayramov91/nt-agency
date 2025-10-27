@@ -46,6 +46,11 @@
         color: var(--title-text-color);
     }
 
+    .errorInput {
+        border: 2px solid red;
+    }
+
+
     .labelFocused {
         font-size: var(--font-size-activeLabel);
     }
@@ -116,7 +121,12 @@
             transform: scale(1);
         }
     }
+    .checkboxError {
+        color: red;
+    }
 }
+
+
 
 @media (max-width: 1800px) {
     .form {

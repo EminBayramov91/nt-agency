@@ -9,14 +9,13 @@ import {AppContext} from "@/app/_context/AppContext";
 export default function Form() {
     const [state, dispatch] = useContext(AppContext);
     const [focusedInput, setFocusedInput] = useState(null);
+    const [errors, setErrors] = useState({});
     const [formData, setFormData] = useState({
         name: "",
         phone: "",
         text: "",
         check: false,
     });
-
-    const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
         const { id, value, type, checked } = e.target;
@@ -34,25 +33,26 @@ export default function Form() {
         if (!formData.text.trim() || formData.text.length < 5) newErrors.text = true;
         if (!formData.check) newErrors.check = true;
 
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
+        return newErrors;
     };
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (validate()) {
+        const validateErrors = validate();
+        setErrors(validateErrors);
+        if (Object.keys(validateErrors).length > 0) {
+            dispatch({type: "FORM_ERROR"})
+        } else {
             dispatch({type: "FORM_SUCCESS"})
+            dispatch({ type: "OPEN_POPUP" });
             setFormData({
                 name: "",
                 phone: "",
                 text: "",
                 check: false,
             })
-            console.log("Success", formData);
-        } else {
-            dispatch({type: "FORM_ERROR"})
         }
-        console.log("Failed");
     }
 
     return (
@@ -72,6 +72,7 @@ export default function Form() {
                 onFocus={() => setFocusedInput("name")}
                 onBlur={() => setFocusedInput(null)}
                 onChange={handleChange}
+                className={errors.name ? styles.errorInput : ""}
             />
             <label
                 htmlFor="phone"
@@ -85,6 +86,7 @@ export default function Form() {
                 setFocusedInput={setFocusedInput}
                 value={formData.phone}
                 onChange={handleChange}
+                error={errors.phone}
             />
             <label
                 htmlFor="text"
@@ -100,9 +102,10 @@ export default function Form() {
                 onFocus={() => setFocusedInput("text")}
                 onBlur={() => setFocusedInput(null)}
                 onChange={handleChange}
+                className={errors.text ? styles.errorInput : ""}
             >
             </textarea>
-            <label className={styles.checkbox} htmlFor="check">
+            <label className={`${styles.checkbox} ${errors.check ? styles.checkboxError : ""}`} htmlFor="check">
                 <input
                     id="check"
                     type="checkbox"
@@ -111,7 +114,9 @@ export default function Form() {
                 />
                 Даю согласие на обработку персональных данных
             </label>
-            <Button onClick={() => dispatch({ type: "OPEN_POPUP" })} type="submit">Обсудить идею</Button>
+            <Button type="submit">
+                Обсудить идею
+            </Button>
         </form>
     );
 }

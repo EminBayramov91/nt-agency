@@ -6,7 +6,6 @@ import Social from "@/app/_components/social/Social";
 import {useContext, useEffect} from "react";
 import {AppContext} from "@/app/_context/AppContext";
 import FormSuccess from "@/app/_components/formSuccess/FormSuccess";
-import FormError from "@/app/_components/formError/FormError";
 
 export default function Popup() {
     const [state, dispatch] = useContext(AppContext);
@@ -21,8 +20,6 @@ export default function Popup() {
         switch (state.formStatus) {
             case "success":
                 return <FormSuccess />
-            case "error":
-                return <FormError />
             case "idle":
                 return (
                     <>
@@ -50,9 +47,6 @@ export default function Popup() {
                     height="34"
                     className={styles.popupImg}
                     onClick={() => {
-                        if (state.formStatus === "error") {
-                            dispatch({ type: "FORM_IDLE" });
-                        } 
                         if (state.formStatus === "success") {
                             dispatch({ type: "FORM_IDLE" })
                             dispatch({ type: "CLOSE_POPUP" })
