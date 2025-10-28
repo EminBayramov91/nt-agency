@@ -114,3 +114,13 @@
         max-width: 343px;
     }
 }
+
+@media (max-width: 425px) {
+    .info {
+        h3 {
+            letter-spacing: -0.5px;
+        }
+
+    }
+}
+
