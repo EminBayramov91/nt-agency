@@ -37,23 +37,42 @@ export default function Form() {
     };
 
 
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async(e) => {
         e.preventDefault();
         const validateErrors = validate();
         setErrors(validateErrors);
         if (Object.keys(validateErrors).length > 0) {
             dispatch({type: "FORM_ERROR"})
-        } else {
-            dispatch({type: "FORM_SUCCESS"})
-            dispatch({ type: "OPEN_POPUP" });
-            setFormData({
-                name: "",
-                phone: "",
-                text: "",
-                check: false,
+            return;
+        } 
+
+        try {
+            const res = await fetch("api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
             })
+
+            const data = await res.json();
+
+            if (data.success) {
+                dispatch({type: "FORM_SUCCESS"})
+                dispatch({ type: "OPEN_POPUP" });
+                setFormData({
+                    name: "",
+                    phone: "",
+                    text: "",
+                    check: false,
+                })
+            } else {
+                dispatch({ type: "FORM_ERROR" });
+            }
+        } catch (error) {
+            console.error("Ошибка при отправке формы:", error);
         }
-    }
+
+    };
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>

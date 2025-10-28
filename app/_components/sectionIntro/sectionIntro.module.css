@@ -1,7 +1,7 @@
 .info {
     h3 {
         font-size: var(--font-size-h3);
-        line-height: var(--line-height-h3);
+        line-height: var(--line-height-title);
         margin-bottom: 24px;
         span {
             display: block;
