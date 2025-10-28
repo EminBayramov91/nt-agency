@@ -30,7 +30,7 @@ export default function PhoneField({ id, focusedInput, setFocusedInput, value, o
                 inputStyle={{
                     width: "100%",
                     height: "50px",
-                    fontFamily: "Nunito Sans, sans-serif",
+                    fontFamily: "Nunito, sans-serif",
                     fontWeight: "600",
                     fontSize: fontSize,
                     backgroundColor: "black",

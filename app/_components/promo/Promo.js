@@ -1,6 +1,7 @@
 import styles from "./promo.module.css";
 import SectionIntro from "@/app/_components/sectionIntro/SectionIntro";
 import Accordion from "@/app/_components/accordion/Accordion";
+import {useState} from "react";
 
 const accordionItems = [
     {
@@ -30,6 +31,8 @@ const accordionItems = [
 ]
 
 export default function Promo() {
+    const [activeId, setActiveId] = useState(null)
+
     return (
         <section id="promo" className={styles.promo}>
             <SectionIntro
@@ -37,7 +40,12 @@ export default function Promo() {
                 text={["Каждый этап — с вниманием,", " а не для отчётности"]}
                 type="promo"
             />
-            <Accordion array={accordionItems} type="promo"/>
+            <Accordion
+                array={accordionItems}
+                type="promo"
+                activeId={activeId}
+                setActiveId={setActiveId}
+            />
         </section>
     )
 }

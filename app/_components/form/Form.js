@@ -78,7 +78,7 @@ export default function Form() {
         <form className={styles.form} onSubmit={handleSubmit}>
             <label
                 htmlFor="name"
-                className={focusedInput === "name" ? styles.labelFocused : ""}
+                className={(focusedInput === "name" || formData.name) ? styles.labelFocused : ""}
             >
                 Ваше имя
             </label>
@@ -95,7 +95,7 @@ export default function Form() {
             />
             <label
                 htmlFor="phone"
-                className={focusedInput === "phone" ? styles.labelFocused : ""}
+                className={(focusedInput === "phone" || formData.phone) ? styles.labelFocused : ""}
             >
                 Контакт для связи
             </label>
@@ -109,7 +109,7 @@ export default function Form() {
             />
             <label
                 htmlFor="text"
-                className={focusedInput === "text" ? styles.labelFocused : ""}
+                className={(focusedInput === "text" || formData.text) ? styles.labelFocused : ""}
             >
                 Пара строк о проекте
             </label>

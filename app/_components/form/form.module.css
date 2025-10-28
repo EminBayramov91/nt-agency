@@ -14,7 +14,7 @@
     input,
     textarea {
         width: 100%;
-        font-family: NunitoSans, sans-serif;
+        font-family: Nunito, sans-serif;
         font-weight: var(--font-weight-semiBold);
         font-size: var(--font-size-input);
         background-color: var(--main-bg);
@@ -24,6 +24,12 @@
         padding: 12px 16px;
         margin-bottom: 24px;
         transition: font-size 0.2s ease;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-family: NunitoSans, sans-serif;
+        font-weight: var(--font-weight-regular);
     }
 
     textarea {
@@ -131,21 +137,16 @@
 @media (max-width: 1800px) {
     .form {
         max-width: 540px;
-        label {
-            font-size: 16px;
-        }
+
         input {
-            font-size: 14px;
             margin-bottom: 22px;
             height: 50px;
         }
         textarea {
             min-height: 136px;
-            font-size: 14px;
             margin-bottom: 29px;
         }
         .checkbox {
-            font-size: 14px;
             margin-bottom: 29px;
             input {
                 margin-right: 14px;
@@ -157,22 +158,17 @@
 @media (max-width: 1600px) {
     .form {
         max-width: 472px;
-        label {
-            font-size: 14px;
-        }
+
         input {
-            font-size: 13px;
             margin-bottom: 19px;
             padding: 10px 13px;
         }
         textarea {
-            font-size: 14px;
             margin-bottom: 25px;
             min-height: 120px;
             padding: 10px 13px;
         }
         .checkbox {
-            font-size: 13px;
             margin-bottom: 25px;
             input {
                 margin-right: 13px;
@@ -185,24 +181,27 @@
     .form {
         max-width: 450px;
         label {
-            font-size: 13px;
+            font-size: 16px;
         }
         input {
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 18px;
         }
         textarea {
-            font-size: 13px;
+            font-size: 14px;
             margin-bottom: 24px;
             min-height: 114px;
             padding: 10px 12px;
         }
         .checkbox {
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 24px;
             input {
                 margin-right: 12px;
             }
+        }
+        .labelFocused {
+            font-size: 13px;
         }
     }
 }
@@ -228,6 +227,9 @@
             input {
                 margin-right: 12px;
             }
+        }
+        .labelFocused {
+            font-size: 12px;
         }
     }
 }

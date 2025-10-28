@@ -5,13 +5,18 @@
     li {
         margin-right: 24px;
 
-        a {
+        a,
+        .linkButton {
+            display: block;
+            font-family: Onder, sans-serif;
             font-size: var(--font-size-social);
             color: var(--title-text-color);
             transition: color 0.3s ease;
+            cursor: pointer;
         }
 
-        a:hover {
+        a:hover,
+        .linkButton:hover {
             color: var(--accent-color);
         }
 
@@ -27,7 +32,8 @@
     margin-top: 32px;
 
     li {
-        a {
+        a,
+        .linkButton{
             font-size: var(--font-size-popupSocial);
         }
     }
@@ -38,7 +44,8 @@
         li {
             margin-right: 22px;
 
-            a {
+            a,
+            .linkButton{
                 font-size: 7px;
             }
 
@@ -51,7 +58,8 @@
         li {
             margin-right: 19px;
 
-            a {
+            a,
+            .linkButton{
                 font-size: 6px;
             }
 
@@ -76,7 +84,8 @@
         li {
             margin-right: 0;
 
-            a {
+            a,
+            .linkButton{
                 font-size: 11px;
             }
 
@@ -90,7 +99,8 @@
         li {
             margin-right: 0;
 
-            a {
+            a,
+            .linkButton {
                 font-size: 6px;
             }
         }
@@ -102,7 +112,8 @@
         width: 350px;
 
         li {
-            a {
+            a,
+            .linkButton{
                 font-size: 10px;
             }
 
@@ -111,7 +122,8 @@
     .popup {
         gap: 16px;
         li {
-            a {
+            a,
+            .linkButton{
                 font-size: 6px;
             }
         }
