@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nt-agency.cloud/sitemap.xml
