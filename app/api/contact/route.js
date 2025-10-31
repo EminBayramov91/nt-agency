@@ -1,5 +1,4 @@
 import nodemailer from "nodemailer";
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
 export async function POST(req) {
     try {
