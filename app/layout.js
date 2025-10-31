@@ -18,7 +18,7 @@ export const metadata = {
         siteName: "N&T Agency",
         images: [
             {
-                url: "https://nt-agency.cloud/n-t-agency-preview.png",
+                url: "https://nt-agency.cloud/nt-agency-preview.png",
                 width: 1200,
                 height: 630,
                 alt: "N&T Agency preview image",
@@ -31,7 +31,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "N&T Agency",
         description: "Creative digital agency providing branding, design, and development services.",
-        images: ["https://nt-agency.cloud/n-t-agency-preview.png"],
+        images: ["https://nt-agency.cloud/nt-agency-preview.png"],
     },
     robots: {
         index: true,
