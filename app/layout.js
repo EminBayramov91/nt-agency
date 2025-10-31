@@ -1,8 +1,11 @@
 import "@/app/styles/globals.css";
+import dynamic from "next/dynamic";
+
 import Header from "@/app/_components/header/Header";
-import Footer from "@/app/_components/footer/Footer";
+const Footer  = dynamic(() => import("@/app/_components/footer/Footer"));
+const Popup  = dynamic(() => import("@/app/_components/popup/Popup"));
+
 import {AppProvider} from "@/app/_context/AppContext";
-import Popup from "@/app/_components/popup/Popup";
 
 export const metadata = {
     metadataBase: new URL("https://nt-agency.cloud"),

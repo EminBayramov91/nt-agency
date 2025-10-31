@@ -1,14 +1,19 @@
 "use client";
 import styles from "@/app/styles/page.module.css";
-import Container from "@/app/_components/container/Container";
+
+import dynamic from "next/dynamic";
+
+const Promo  = dynamic(() => import("@/app/_components/promo/Promo"), { ssr: false });
+const Services  = dynamic(() => import("@/app/_components/services/Services"), { ssr: false });
+const Projects  = dynamic(() => import("@/app/_components/projects/Projects"), { ssr: false });
+const Faq  = dynamic(() => import("@/app/_components/faq/Faq"), { ssr: false });
+const Contact  = dynamic(() => import("@/app/_components/contact/Contact"), { ssr: false });
+
 import Hero from "@/app/_components/hero/Hero";
-import Contact from "@/app/_components/contact/Contact";
-import Promo from "@/app/_components/promo/Promo";
+import Container from "@/app/_components/container/Container";
+
 import {useContext, useEffect} from "react";
 import {AppContext} from "@/app/_context/AppContext";
-import Services from "@/app/_components/services/Services";
-import Faq from "@/app/_components/faq/Faq";
-import Projects from "@/app/_components/projects/Projects";
 
 export default function Page() {
     const [state, dispatch] = useContext(AppContext);

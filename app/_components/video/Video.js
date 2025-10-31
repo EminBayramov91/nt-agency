@@ -9,6 +9,7 @@ export default function Video() {
             controls={false}
             loop={true}
             playsInline
+            preload="metadata"
             poster="/hero-bg.webp"
         >
             <source src="video.mp4" type="video/mp4" />
