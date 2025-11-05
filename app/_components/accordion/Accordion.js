@@ -34,7 +34,9 @@ export default function Accordion({ array, type, activeId, setActiveId, isMobile
                                 height="32"
                             />
                         </div>
-                        <p>{item.text}</p>
+                        <p>
+                            {item.text.map((t, i) => <span key={i} style={{display: "block"}}>{t}</span>)}
+                        </p>
                     </div>
                 );
             })}

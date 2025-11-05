@@ -9,11 +9,13 @@ import {AppProvider} from "@/app/_context/AppContext";
 
 export const metadata = {
     metadataBase: new URL("https://nt-agency.cloud"),
-    title: "N&T Agency — Digital Solutions and Design",
-    description: "N&T Agency — креативное digital-агентство, которое создаёт брендинг, дизайн и сайты под ключ.",
+    title: "N&T Agency — UX/UI дизайн и разработка сайтов | Минск, СНГ",
+    description:
+        "N&T Agency — дизайн-агентство из Минска. Разрабатываем дизайн, брендинг, мобильные интерфейсы и сайты под ключ для компаний из Беларуси и СНГ. Чистый визуал, понятная логика, digital-решения, которые работают.",
     openGraph: {
-        title: "N&T Agency",
-        description: "N&T Agency — креативное digital-агентство, которое создаёт брендинг, дизайн и сайты под ключ.",
+        title: "N&T Agency — UX/UI, брендинг и разработка сайтов",
+        description:
+            "Дизайн-агентство из Минска: UX/UI дизайн, брендинг и создание сайтов под ключ для бизнеса в Беларуси и СНГ.",
         url: "https://nt-agency.cloud/",
         siteName: "N&T Agency",
         images: [
@@ -21,7 +23,7 @@ export const metadata = {
                 url: "https://nt-agency.cloud/nt-agency-preview.png",
                 width: 1200,
                 height: 630,
-                alt: "N&T Agency preview image",
+                alt: "UX/UI и брендинг от N&T Agency — Минск",
             },
         ],
         locale: "ru_RU",
@@ -29,8 +31,9 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "N&T Agency",
-        description: "Creative digital agency providing branding, design, and development services.",
+        title: "N&T Agency — UX/UI дизайн и digital-разработка",
+        description:
+            "Создаём сайты и бренды для компаний в Беларуси и СНГ. UX/UI, брендинг, дизайн под ключ.",
         images: ["https://nt-agency.cloud/nt-agency-preview.png"],
     },
     robots: {

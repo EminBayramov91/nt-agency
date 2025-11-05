@@ -8,10 +8,10 @@ export default function Social({ type }) {
     const openViber = (phone) => {
         const viberUrl = `viber://chat?number=${phone}`;
         const fallbackUrl = "https://www.viber.com/download/";
-        window.location.href = viberUrl;
+        if (isMobile) window.location.href = viberUrl;
         setTimeout(() => {
-            window.location.href = fallbackUrl;
-        }, 1200);
+            window.open(fallbackUrl, "_blank");
+        }, 1000);
     };
 
     const links = [
@@ -49,7 +49,7 @@ export default function Social({ type }) {
                             {link.title}
                         </button>
                     ) : (
-                        <Link href={link.src} target="_blank">
+                        <Link href={link.src} rel="noopener noreferrer" target="_blank">
                             {link.title}
                         </Link>
                     )}
