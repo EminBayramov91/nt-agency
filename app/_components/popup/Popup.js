@@ -21,8 +21,8 @@ export default function Popup() {
         switch (state.formStatus) {
             case "success":
                 return <FormSuccess />
-            case "error":
-                return <FormError />
+            // case "error":
+            //     return <FormError />
             case "idle":
                 return (
                     <>
