@@ -235,3 +235,25 @@
 }
 
 
+
+@media (max-width: 425px) {
+    .form {
+        input,
+        .phone-input{
+            border-radius: var(--mobile-radius)!important;
+        }
+        .checkbox {
+            input[type="checkbox"] {
+                border-radius: var(--checkbox-radius)!important;
+            }
+        }
+    }
+    #check {
+        border-radius: var(--checkbox-radius)!important;
+    }
+    .popup {
+        max-width: 302px;
+    }
+}
+
+

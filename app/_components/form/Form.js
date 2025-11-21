@@ -6,7 +6,7 @@ import {useContext, useState} from "react";
 import {AppContext} from "@/app/_context/AppContext";
 
 
-export default function Form() {
+export default function Form({ type }) {
     const [state, dispatch] = useContext(AppContext);
     const [focusedInput, setFocusedInput] = useState(null);
     const [errors, setErrors] = useState({});
@@ -30,7 +30,6 @@ export default function Form() {
 
         if (!formData.name.trim() || formData.name.length < 2) newErrors.name = true;
         if (!formData.phone.trim() || formData.phone.length < 8) newErrors.phone = true;
-        if (!formData.text.trim() || formData.text.length < 5) newErrors.text = true;
         if (!formData.check) newErrors.check = true;
 
         return newErrors;
@@ -75,7 +74,7 @@ export default function Form() {
     };
 
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={`${styles.form} ${styles[type]}`} onSubmit={handleSubmit}>
             <label
                 htmlFor="name"
                 className={(focusedInput === "name" || formData.name) ? styles.labelFocused : ""}

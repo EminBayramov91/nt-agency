@@ -5,7 +5,7 @@ export async function POST(req) {
         const body = await req.json();
         const {name, phone, text, check} = body;
 
-        if (!name || !phone || !text || !check) {
+        if (!name || !phone || !check) {
             return new Response(JSON.stringify({success: false, message: "All fields required"}), {status: 400});
         }
 

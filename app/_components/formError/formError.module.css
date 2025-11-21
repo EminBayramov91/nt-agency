@@ -1,0 +1,39 @@
+.error {
+    text-align: center;
+    h3 {
+        font-family: Onder, sans-serif;
+        font-size: var(--font-size-accordion);
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-success);
+        color: var(--form-error);
+        margin-bottom: 24px;
+    }
+    p {
+        font-family: NunitoSans, sans-serif;
+        font-size: var(--font-size-card);
+        font-weight: var(--font-weight-small);
+        color: var(--title-text-color);
+    }
+}
+
+@media (max-width: 1600px) {
+    .error {
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .error {
+        h3 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

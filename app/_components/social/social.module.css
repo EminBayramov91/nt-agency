@@ -120,7 +120,7 @@
         }
     }
     .popup {
-        gap: 16px;
+        gap: 8px;
         li {
             a,
             .linkButton{

@@ -27,6 +27,7 @@ export default function PhoneField({ id, focusedInput, setFocusedInput, value, o
                     id: id,
                     required: true,
                 }}
+                inputClass="phone-input"
                 inputStyle={{
                     width: "100%",
                     height: "50px",

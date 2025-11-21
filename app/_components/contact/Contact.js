@@ -10,7 +10,7 @@ export default function Contact() {
                 text={["Просто расскажите суть,", " а мы подскажем, с чего начать."]}
                 type="contact"
             />
-            <Form />
+            <Form/>
         </section>
     )
 }

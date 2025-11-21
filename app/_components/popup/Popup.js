@@ -6,6 +6,7 @@ import Social from "@/app/_components/social/Social";
 import {useContext, useEffect} from "react";
 import {AppContext} from "@/app/_context/AppContext";
 import FormSuccess from "@/app/_components/formSuccess/FormSuccess";
+import FormError from "@/app/_components/formError/FormError";
 
 export default function Popup() {
     const [state, dispatch] = useContext(AppContext);
@@ -20,10 +21,12 @@ export default function Popup() {
         switch (state.formStatus) {
             case "success":
                 return <FormSuccess />
+            case "error":
+                return <FormError />
             case "idle":
                 return (
                     <>
-                        <Form/>
+                        <Form type="popup"/>
                         <Social type="popup"/>
                     </>
                 )

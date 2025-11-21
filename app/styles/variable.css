@@ -11,11 +11,14 @@
     --checkbox-border: 1px solid #ffffff;
 
     --radius: 20px;
+    --mobile-radius: 10px;
     --popup-radius: 30px;
     --header-radius: 40px;
     --checkbox-radius: 4px;
 
     --title-shadow: 7px 4px 0 rgba(0, 0, 255, 1);
+
+    --form-error: red;
 
     --font-size-h1: 115px;
     --font-size-h3: 32px;
