@@ -35,16 +35,21 @@ export default function Form({ type }) {
         return newErrors;
     };
 
+    const checkForm = () => {
+        setErrors(validate());
+
+        const valid = Object.keys(validate()).length === 0
+        if (!valid) dispatch({type: "FORM_ERROR"})
+
+        return valid;
+    }
 
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        const validateErrors = validate();
-        setErrors(validateErrors);
-        if (Object.keys(validateErrors).length > 0) {
-            dispatch({type: "FORM_ERROR"})
-            return;
-        } 
+        dispatch({type: "FORM_LOADING"})
+
+        if(!checkForm()) return;
 
         try {
             const res = await fetch("api/contact", {
@@ -72,6 +77,11 @@ export default function Form({ type }) {
         }
 
     };
+
+    const handleClick = () => {
+        if(!checkForm()) return;
+        dispatch({type: "OPEN_POPUP"})
+    }
 
     return (
         <form className={`${styles.form} ${styles[type]}`} onSubmit={handleSubmit}>
@@ -132,7 +142,7 @@ export default function Form({ type }) {
                 />
                 Даю согласие на обработку персональных данных
             </label>
-            <Button type="submit">
+            <Button onClick={handleClick} type="submit">
                 Обсудить идею
             </Button>
         </form>

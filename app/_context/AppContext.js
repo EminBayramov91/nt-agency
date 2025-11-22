@@ -21,6 +21,8 @@ function reducer(state, action) {
             return { ...state, scrollTo: null };
         case "FORM_SUCCESS":
             return { ...state, formStatus: "success" };
+        case "FORM_LOADING":
+            return { ...state, formStatus: "loading"}
         case "FORM_ERROR":
             return { ...state, formStatus: "error" };
         case "FORM_IDLE":
